@@ -3,9 +3,7 @@
 
 ### Introduction
 
-This a personal porfolio website to share my experience with full stack development. 
+This a personal porfolio website to share my experience and journey in full stack development. 
 
 <br />
-Link: 
-
-* https://davet123.github.io/project-portfolio/index.html
+Website: https://davet123.github.io/project-portfolio/index.html
