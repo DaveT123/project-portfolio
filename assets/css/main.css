@@ -2792,7 +2792,7 @@ button:disabled,
 
 .spotlight .image img {
     border-radius: 0;
-    height: 400px;
+    max-height: 400px;
     width: 100%;
 }
 
@@ -2901,7 +2901,7 @@ button:disabled,
     }
 
     .spotlight .content {
-        padding: 4em 3em 2em 3em;
+        padding: 4em;
         max-width: none;
         text-align: center;
         width: 100%;
@@ -2910,7 +2910,7 @@ button:disabled,
 
 @media screen and (max-width: 736px) {
     .spotlight .content {
-        padding: 3em 2em 1em 2em;
+        padding: 3em;
     }
 }
 
@@ -3272,8 +3272,12 @@ button:disabled,
 }
 
 @media screen and (max-width: 736px) {
-    .wrapper.style3 .features li {
+    .wrapper.style3 .features > li {
+        border-top: solid;
         border-top-color: rgba(0, 0, 0, 0.125);
+    }
+    .wrapper.style3 .features > li li {
+        border-top-color: rgba(0, 0, 0, 0);
     }
 }
 
@@ -3493,7 +3497,7 @@ button:disabled,
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: #21b2a6;
+    background: #67b7d1;
     color: #ffffff;
     height: 100%;
     max-width: 80%;
@@ -3583,9 +3587,9 @@ body.is-menu-visible #menu {
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
     background: #2e3842;
-    height: 3em;
+    height: 4em;
     left: 0;
-    line-height: 3em;
+    line-height: 4em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -3609,11 +3613,12 @@ body.is-menu-visible #menu {
     display: block;
     height: inherit;
     line-height: inherit;
+    font-size: 1.5em;
 }
 
 @media screen and (max-width: 736px) {
     #header h1 a {
-        font-size: 0.8em;
+        font-size: 1.5em;
     }
 }
 
@@ -3641,7 +3646,7 @@ body.is-menu-visible #menu {
     border: 0;
     color: #fff;
     display: block;
-    font-size: 0.8em;
+    font-size: 1.25em;
     letter-spacing: 0.225em;
     padding: 0 1.5em;
     text-transform: uppercase;
@@ -3658,9 +3663,9 @@ body.is-menu-visible #menu {
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
-    height: 3.75em;
-    vertical-align: top;
-    width: 2em;
+    height: 2.5em;
+    vertical-align: middle;
+    width: 2.5em;
 }
 
 @media screen and (max-width: 736px) {
