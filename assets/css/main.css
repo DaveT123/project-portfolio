@@ -2776,6 +2776,7 @@ button:disabled,
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    height: 400px;
 }
 
 .spotlight .image {
@@ -2785,6 +2786,7 @@ button:disabled,
     order: 1;
     border-radius: 0;
     width: 50%;
+    height: 100%;
     background: linear-gradient(to right, #868f96 0%, #596164 100%);
     display: flex;
     align-items: center;
@@ -2792,8 +2794,9 @@ button:disabled,
 
 .spotlight .image img {
     border-radius: 0;
-    max-height: 400px;
+    height: 100%;
     width: 100%;
+    object-fit: fill;
 }
 
 .spotlight .content {
@@ -2823,11 +2826,23 @@ button:disabled,
 .spotlight .content .project-links img {
     height: 2em;
     width: 2em;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 .spotlight .content .project-links p {
     margin: 0 !important;
+}
+
+.spotlight .content .project-button {
+    border: 1px solid #d3d3d350;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.spotlight .content .project-button:hover {
+    background: #d3d3d3;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .spotlight:nth-child(2n) {
