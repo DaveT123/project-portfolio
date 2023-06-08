@@ -2946,7 +2946,7 @@ button:disabled,
 
     .spotlight .content {
         height: 30vh;
-        min-height: 250px;
+        min-height: 300px;
     }
 }
 
